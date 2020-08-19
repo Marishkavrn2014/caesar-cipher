@@ -14,8 +14,7 @@ public class CaesarCipherDecoder {
                 "шхёвдгюмгдви. Гхязю ёънъгюъ вгъ едвдшбх еёдшёхввх югзиюзючгдшд зюех, жеълюхбсгд " +
                 "ждэщхггхф щбф юэимъгюф деёъщъбъггрк жздёдг мъбдчъмъжадя щиню. Въгф вдьгд гхэчхзс " +
                 "дзлдв Вхзёюлр, х ъы, цъэ еёъичъбюмъгюф, вхзъёсу.";
-
-        printDecodedCesarCipher(encryptedText, alphabetUpperCase, alphabetLowerCase);
+        printDecodedCaesarCipher(encryptedText, alphabetUpperCase, alphabetLowerCase);
     }
 
     public static int findCharIndexInArray(char[] charsArray, char desiredChar) {
@@ -37,8 +36,8 @@ public class CaesarCipherDecoder {
 
     // printing all options for shifting letters of the alphabet. You can use your own alphabet.
     // Symbols ".", ",", " " are not encrypted.
-    public static void printDecodedCesarCipher(String encryptedText, char[] alphabetUpperCase,
-                                               char[] alphabetLowerCase) {
+    public static void printDecodedCaesarCipher(String encryptedText, char[] alphabetUpperCase,
+                                                char[] alphabetLowerCase) {
         char[] oldText = encryptedText.toCharArray();
         for (int i = 1; i < alphabetUpperCase.length + 1; i++) {
             char[] newText = new char[encryptedText.length()];
